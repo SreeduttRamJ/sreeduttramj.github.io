@@ -1,0 +1,478 @@
+/*!
+Theme Name: arter child
+Theme URI: https://bslthemes.com/arter-wp/
+Author: beshleyua
+Author URI: https://themeforest.net/user/beshleyua
+Description: Arter - CV Resume WordPress Theme
+Version: 1.0.0
+License: General Public License
+License URI: http://www.gnu.org/licenses/gpl.html
+Template: arter
+Text Domain: arter-child
+Tags: full-width-template, editor-style, featured-images, sticky-post, threaded-comments, translation-ready, theme-options 
+*/
+
+h2, h3, h4 {
+    margin-bottom: 15px;
+}
+
+.art-preloader {
+    display: none !important;
+}
+
+.art-avatar:hover i {
+    display: none !important;
+}
+
+.uil-ripple-css div {
+    -webkit-animation: uil-ripple 0.5s ease-out infinite;
+    animation: uil-ripple 0.5s ease-out infinite;
+}
+
+.uil-ripple-css div:nth-of-type(2) {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.art-counter-frame .art-counter-box {
+    min-width: unset;
+    padding-right: 20px;
+}
+
+
+a.button.product_type_external {
+    white-space: nowrap;
+    width: 225px;
+}
+
+#wpas_ticket_priority {
+    height: 55px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 99%;
+    background-position-y: 13px;
+}
+
+span.select2-selection.select2-selection--single {
+    height: 55px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    width: 26px;
+}
+
+.widget-title {
+    padding-bottom: 15px;
+}
+
+.widget-title::before {
+    content: unset !important;
+}
+
+.widget-title::after {
+    content: unset !important;
+}
+
+.copyright-bar strong {
+	color: #ddd !important;
+}
+
+.tijarah-search-fields input {
+    color: #FFF;
+}
+
+.nice-select.postform {
+    color: #FFF;
+}
+
+.nice-select::after {
+    border-bottom: 2px solid #FFF;
+    border-right: 2px solid #FFF;
+}
+
+.tijarah-download-cat-filter {
+    border: none;
+}
+
+.tijarah-product-search-form {
+    width: 70% !important;
+}
+
+.wp-block-code.dark {
+    background: #1b2426 !important;
+    color: #FFF;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea,
+select,
+.comment-navigation .nav-links a,
+.btn,
+.post-navigation .nav-previous a,
+.post-navigation .nav-next a,
+.checkout-button,
+.widget-woocommerce .single_add_to_cart_button,
+.header-btn .my-account-btn,
+.excerpt-readmore a ,
+.pagination .nav-links .page-numbers,
+.widget-product-details select,
+.widget-product-details input[type=number],
+.widget-product-details .nice-select,
+.comment-form input[type=submit],
+.tijarah-product-search-form,
+.tijarah-btn
+{
+	border-radius: 4px !important;
+}
+
+.tijarah-search-btn {
+    border-radius: 0px 4px 4px 0px !important;
+    border: none;
+    border-left: 1px solid #fff;
+}
+
+.download-item-overlay li a {
+	border-radius: 4px !important;
+}
+
+ol, ul {
+    padding-left: 36px;
+}
+
+#scodeware-2fa label {
+    width: auto !important;
+}
+
+#scodeware-2fa input[type=radio]{
+    margin-top: 6px;
+}
+
+.fullwidth label {
+    width: 100% !important;
+}
+
+.woocommerce-tabs .panel h2:first-of-type {
+    display: block !important;
+}
+
+.product-feature-icon .elementor-icon {
+    border: 2px solid #353C45 !important
+}
+
+.product-feature-icon h3 span {
+	color: #FFF !important;
+}
+
+.product-feature-icon svg path {
+	fill: #2196F3 !important;
+}
+
+.fullwidth-custom-col .elementor-column-wrap.elementor-element-populated {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+
+.core-feature-icon svg path {
+	fill: #2196F3 !important;
+}
+
+.core-feature-icon .elementor-icon {
+    border: none !important;
+}
+
+.core-feature-icon h3 span {
+	color: #FFF !important;
+}
+
+.core-feature-icon .elementor-icon-box-description {
+    text-align: left !important;
+}
+
+.core-feature-icon .elementor-icon-box-title {
+    text-align: left !important;
+}
+
+.core-feature-icon .elementor-icon {
+    display: unset !important;
+}
+
+.core-feature-icon .elementor-icon-box-icon {
+    height: 45px !important;
+}
+
+.core-feature-icon svg {
+    zoom: 150%;
+}
+
+.check-mark-svg svg path {
+    fill: #2F9CF3 !important;
+}
+
+.check-mark-svg svg {
+    position: relative;
+    top: 3px;
+}
+
+.core-feature-icon {
+    -webkit-box-shadow: 0px 0px 24px 0px #1c1c1c;
+    box-shadow: 0px 0px 24px 0px #1c1c1c;
+    border: 1px solid #1D1D24;
+
+    padding: 25px 14px !important;
+}
+
+.core-feature-icon span.elementor-icon.elementor-animation- {
+    padding: 0px !important;
+}
+
+.ninja-resize img {
+    width: 250px !important;
+}
+
+.select2-container .select2-selection--single
+{
+	border-radius: 4px !important;
+}
+
+.less-padding {
+    padding: 20px 30px !important;
+}
+
+.woocommerce-Tabs-panel--description h3.elementor-icon-box-title {
+    font-size: 18px !important;
+}
+
+.sdm_download_link {
+	text-align: center !important;
+}
+
+a.sdm_download.blue {
+    background: #4777e8 !important;
+    text-align: center !important;
+    color: #FFF !important;
+    box-shadow: unset !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    padding: 10px 20px !important;
+    font-family: Rubik, sans-serif !important;
+    margin: 10px 0px !important;
+    display: inline-block;
+}
+
+span.wedocs-caret {
+    display: none;
+}
+
+.sit-theme-envato {
+    max-width: 522px !important;
+}
+
+.woocommerce-additional-fields {
+  display: none;
+}
+
+
+.widget-product-details .product-sidebar-stats {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.widget-price-notice {
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.yith-woocommerce-ajax-product-filter small.count {
+    background: #4676e6;
+    padding: 4px 7px;
+    color: #FFF;
+    border-radius: 2px;
+    margin-left: 4px;
+}
+
+li.yit-wcan-parent-terms {
+    font-weight: 600;
+}
+
+ul.yith-child-terms.level-0 {
+    padding-left: 40px;
+}
+
+.yith-woocommerce-ajax-product-filter li {
+    border-bottom: 0 !important;
+}
+
+.widget {
+    box-shadow: 0px 10px 20px rgba(97, 105, 140, 0.1);
+}
+
+.wpas-reply-content a,
+.elementor-text-editor a,
+.woocommerce-Tabs-panel--description a,
+article[class^="post"] .entry-content a {
+  color: #007bff !important;
+}
+
+.help-desk-menu ul {
+    list-style: none;
+    padding: 0 !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #1f1f1f;
+}
+
+.single-product .art-a.art-project-cover,
+.single-product .tabs.wc-tabs {
+    display: none;
+}
+
+.elementor-icon-list-item::before {
+    content: unset !important;
+}
+
+.elementor-icon-list-icon {
+    line-height: 0;
+}
+
+.wedocs-single-wrap {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list li ul.children li a {
+    color: #b5b5b5;
+}
+.wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list li ul.children li.current_page_item a {
+    color: #FFF;
+}
+
+
+.box-content {
+    margin: 0 30px !important;
+}
+
+
+.wpas-ticket-replies > tbody > tr.wpas_user_administrator > td, .wpas-ticket-replies > tbody > tr.wpas_user_wpas_agent > td, .wpas-ticket-replies > tbody > tr.wpas_user_wpas_manager > td, .wpas-ticket-replies > tbody > tr.wpas_user_wpas_support_manager > td {
+    background-color: #20202a;
+}
+
+.wpas-ticket-replies > tbody > tr > td {
+    border: none !important;
+}
+
+.page-id-3028 .art-menu-bar,
+.page-id-3019 .art-menu-bar,
+.single-ticket .art-menu-bar,
+.single-docs .art-menu-bar,
+.page-id-3018 .art-menu-bar,
+.page-id-2887 .art-menu-bar,
+
+.page-id-3028 .art-info-bar,
+.page-id-3019 .art-info-bar,
+.single-ticket .art-info-bar,
+.single-docs .art-info-bar,
+.page-id-3018 .art-info-bar,
+.page-id-2887 .art-info-bar
+{
+    display: none;
+}
+
+.page-id-3028 .art-content,
+.page-id-3019 .art-content,
+.single-ticket .art-content,
+.single-docs .art-content,
+.page-id-3018 .art-content,
+.page-id-2887 .art-content
+{
+    padding-right: 0 !important;
+}
+
+.wedocs-container {
+    margin: 0px;
+    max-width: 100% !important;
+}
+
+.wpas-reply-attachements {
+    background-color: #20202a !important;
+    border-top-color: #20202a !important;
+}
+
+.sdm_download.blue {
+    border: 0 !important;
+    border-radius: 0 !important;
+    color: #FFF !important;
+}
+
+.wpas-reply-content a, .elementor-text-editor a, .woocommerce-Tabs-panel--description a, article[class^="post"] .entry-content a {
+    color: #FFF !important;
+}
+
+.single-ticket .wpas-reply-content a {
+    color: #20c997 !important;
+}
+
+.page-id-2887 .blog-content.less-padding {
+    margin: 0px 0px 0px 0px;
+    padding: 35px 15px 35px 15px;
+    background-color: #20202A;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #14141B;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.page-id-2887 .blog-content.less-padding h4 {
+    margin-bottom: 20px;
+}
+
+.wpas-submission-form-inside-after-subject.container {
+    padding: 0;
+}
+
+.wpas-submission-form-inside-after-subject.container .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 52px;
+}
+
+.wpas-submission-form-inside-after-subject.container .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 49px;
+    right: 9px;
+}
+
+#wpas_ticket_priority {
+    background: #FFF;
+}
+
+#wpasev-get-license img {
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .tax-product_tag .container,
+    .tax-product_cat .container,
+    .post-type-archive-product .container {
+        max-width: 1600px;
+    }
+}
+
