@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phone Flash Control</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    #flashButton {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    #flashButton:hover {
+      background-color: #0056b3;
+    }
+
+    #flashStatus {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Phone Flash Control</h1>
+
+  <button id="flashButton">Toggle Flash</button>
+
+  <p id="flashStatus"></p>
+
+  <script>
+    const flashButton = document.getElementById('flashButton');
+    const flashStatus = document.getElementById('flashStatus');
+
+    let flashState = false;
+
+    flashButton.addEventListener('click', () => {
+      flashState = !flashState;
+
+      if (flashState) {
+        flashButton.textContent = 'Turn Off Flash';
+        flashStatus.textContent = 'Flash is on';
+
+        // Turn on the phone's flash using device orientation data
+        // Use the Device Orientation Event API to detect tilt
+      } else {
+        flashButton.textContent = 'Turn On Flash';
+        flashStatus.textContent = 'Flash is off';
+
+        // Turn off the phone's flash
+      }
+    });
+
+    window.addEventListener('deviceorientation', (event) => {
+      const { alpha, beta, gamma } = event.acceleration;
+
+      // Check for tilt based on device orientation angles
+      // Use the alpha, beta, and gamma angles to determine the tilt
+      if (isTilted(alpha, beta, gamma)) {
+        // Toggle the flash if the phone is tilted
+        if (!flashState) {
+          flashState = true;
+          flashButton.textContent = 'Turn Off Flash';
+          flashStatus.textContent = 'Flash is on';
+
+          // Turn on the phone's flash
+        }
+      } else {
+        // Turn off the flash if the phone is not tilted
+        if (flashState) {
+          flashState = false;
+          flashButton.textContent = 'Turn On Flash';
+          flashStatus.textContent = 'Flash is off';
+
+          // Turn off the phone's flash
+        }
+      }
+    });
+
+    function isTilted(alpha, beta, gamma) {
+      // Implement the tilt detection logic
+      // Use the alpha, beta, and gamma angles to determine the tilt
+      // Return true if the phone is tilted, false otherwise
+    }
+  </script>
+</body>
+</html>
